@@ -1,5 +1,6 @@
-import { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 import { colors, typography } from "./theme"
+import background from "../assets/images/background.png"
 
 export const GlobalStyle = createGlobalStyle`
   /* colors variables */
@@ -14,4 +15,13 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Montserrat';
   }
+`
+export const Application = styled.main`
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary-opacity);
+  background-image: url(${background});
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
 `

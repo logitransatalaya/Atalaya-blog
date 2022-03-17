@@ -2,13 +2,16 @@ import { css } from "styled-components"
 
 export const colors = css`
   :root {
-    --blue: rgba(15, 33, 111, 1);
-    --blue-opacity: rgba(15, 33, 111, 0.8);
+    --primary: rgba(15, 33, 111, 1);
+    --primary-opacity: rgba(15, 33, 111, 0.8);
+    --secondary-orange: rgba(229, 92, 30, 1);
+    --secondary: rgba(231, 101, 30, 1);
+    --secondary-light: rgba(243, 166, 28, 1):
     --light-gray: rgba(221, 221, 221, 1);
+    --dark-gray: rgba(112, 112, 112, 1);
+    --black: rgba(2, 6, 26, 1);
+    --black-opacity: rgba(2, 6, 26, 0.9);
     --white: rgba(255, 255, 255, 1);
-    --dark-orange: rgba(229, 92, 30, 1);
-    --orange: rgba(231, 101, 30, 1);
-    --light-orange: rgba(243, 166, 28, 1):
   }
 `
 

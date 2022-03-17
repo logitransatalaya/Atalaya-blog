@@ -1,12 +1,26 @@
-import Home from "./features/Home"
-import { GlobalStyle } from "./styles"
+import Home from "./pages/Home"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import WorkWithus from "./pages/WorkWithUs"
+import AtalayaApp from "./pages/AtalayaApp"
+import News from "./pages/News"
+import Us from "./pages/Us"
+import Allies from "./pages/Allies"
+import { Application } from "./styles"
 
 function App() {
   return (
-    <>
-      <GlobalStyle />
-      <Home />
-    </>
+    <Application>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="trabaja-con-nosotros" element={<WorkWithus />} />
+          <Route path="atalaya-mobile" element={<AtalayaApp />} />
+          <Route path="ultimas-noticias" element={<News />} />
+          <Route path="nosotros" element={<Us />} />
+          <Route path="aliados" element={<Allies />} />
+        </Routes>
+      </BrowserRouter>
+    </Application>
   )
 }
 
