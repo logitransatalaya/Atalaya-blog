@@ -4,7 +4,6 @@ import styled from "styled-components"
 export const SliderContainer = styled.div`
   width: 100%;
   height: 60%;
-  /* border: 1px dashed red; */
   overflow: hidden;
   padding: 0;
   margin: 0;
@@ -16,14 +15,11 @@ export const SliderContainer = styled.div`
     position: relative;
     width: 75%;
     height: 100%;
-    /* border: 1px dashed blue; */
-    /* background-color: red; */
     overflow: hidden;
 
     .btns-slider {
       width: 100%;
       height: 100%;
-      /* background-color: green; */
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -35,6 +31,19 @@ export const SliderContainer = styled.div`
         background-color: transparent;
         border: none;
         cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .row {
+      min-width: 100%;
+
+      .btns-slider {
+        .btn {
+          cursor: none;
+          display: none;
+        }
       }
     }
   }
@@ -70,5 +79,9 @@ export const CardSlider = styled(motion.div)`
       align-items: center;
       text-align: center;
     }
+  }
+
+  @media screen and (max-width: 767px) {
+    min-width: 70%;
   }
 `

@@ -6,10 +6,12 @@ import News from "./pages/News"
 import Us from "./pages/Us"
 import Allies from "./pages/Allies"
 import { Application } from "./styles"
+import LogoAtalaya from "./assets/icons/logo.svg"
 
 function App() {
   return (
     <Application>
+      <img src={LogoAtalaya} alt="Logo" />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

@@ -24,4 +24,16 @@ export const Application = styled.main`
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-position: 0 50%;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 30rem;
+  }
+
+  .footer {
+    width: 100%;
+    height: 5rem;
+    background-color: red;
+  }
 `

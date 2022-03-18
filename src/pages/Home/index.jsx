@@ -1,12 +1,13 @@
 import React from "react"
+import Footer from "../../components/Footer"
 import Slider from "../../components/Slider"
 import { HomeContainer } from "./styles"
 
 const Home = () => {
   return (
     <HomeContainer>
-      <h1 className="jmm">Home</h1>
-      <Slider></Slider>
+      <Slider />
+      <Footer />
     </HomeContainer>
   )
 }
